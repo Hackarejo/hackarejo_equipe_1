@@ -11,14 +11,14 @@ import br.edu.unisep.hibernate.HibernateSessionFactory;
 
 public class UsuarioDAO extends DAOGenerico<UsuarioVO> {
 
-	public Integer login(UsuarioVO usuario) {
+	public UsuarioVO login(UsuarioVO usuario) {
 
 		List<UsuarioVO> ok = null;
 
 		Session session = HibernateSessionFactory.getSession();
 
 		SQLQuery q = session
-				.createSQLQuery("select * from usuarios q where q.login = ? and q.senha = ?");
+				.createSQLQuery("select * from usuarios q where q.email = ? and q.senha = ?");
 
 		q.addEntity(UsuarioVO.class);
 
@@ -30,9 +30,9 @@ public class UsuarioDAO extends DAOGenerico<UsuarioVO> {
 		session.close();
 
 		if (ok.isEmpty()) {
-			return 1;
+			return ok.get(0);
 		} else {
-			return 0;
+			return ok.get(0);
 		}
 	}
 }

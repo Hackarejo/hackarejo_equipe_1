@@ -30,11 +30,11 @@ public class LoginWS {
 		
 		UsuarioDAO dao = new UsuarioDAO();
 		
-		Integer ok = dao.login(usuario);
+		UsuarioVO ok = dao.login(usuario);
 
-		if (ok == 0) {
+		if (ok != null) {
 			Response retorno = null;
-			retorno = Response.ok().build();
+			retorno = Response.ok(ok).build();
 
 			request.getSession().setAttribute("LOGADO", "OK");
 			return retorno;

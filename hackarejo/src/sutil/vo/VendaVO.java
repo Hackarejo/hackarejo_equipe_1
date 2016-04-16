@@ -23,7 +23,7 @@ public class VendaVO {
 
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "cliente")
-	private ClienteVO cliente;
+	private UsuarioVO cliente;
 
 	@Column(name = "data")
 	private Date data;
@@ -36,6 +36,8 @@ public class VendaVO {
 	@JoinColumn(name = "usuario")
 	private UsuarioVO usuario;
 
+	private Integer status;
+
 	public Integer getId() {
 		return id;
 	}
@@ -44,11 +46,11 @@ public class VendaVO {
 		this.id = id;
 	}
 
-	public ClienteVO getCliente() {
+	public UsuarioVO getCliente() {
 		return cliente;
 	}
 
-	public void setCliente(ClienteVO cliente) {
+	public void setCliente(UsuarioVO cliente) {
 		this.cliente = cliente;
 	}
 
@@ -74,6 +76,14 @@ public class VendaVO {
 
 	public void setUsuario(UsuarioVO usuario) {
 		this.usuario = usuario;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
 	}
 
 }

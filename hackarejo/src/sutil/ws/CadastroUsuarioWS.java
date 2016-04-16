@@ -17,9 +17,13 @@ public class CadastroUsuarioWS {
 
 		DAOGenerico<UsuarioVO> dao = new DAOGenerico<UsuarioVO>();
 
+		ConverteSenhaWS converteSenha = new ConverteSenhaWS();
+
 		if (usuario.getId() != null && usuario.getId() != 0) {
+			usuario.setSenha(converteSenha.converte(usuario.getSenha()));
 			dao.atualizar(usuario);
 		} else {
+			usuario.setSenha(converteSenha.converte(usuario.getSenha()));
 			dao.salvar(usuario);
 		}
 	}

@@ -16,6 +16,8 @@ import sutil.vo.UsuarioVO;
 @Path("/login")
 public class LoginWS {
 
+	ConverteSenhaWS converteSenha = new ConverteSenhaWS();
+	
 	@Context
 	private HttpServletRequest request;
 
@@ -24,8 +26,10 @@ public class LoginWS {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response doLogin(UsuarioVO usuario) {
 
+		usuario.setSenha(converteSenha.converte(usuario.getSenha()));
+		
 		UsuarioDAO dao = new UsuarioDAO();
-
+		
 		Integer ok = dao.login(usuario);
 
 		if (ok == 0) {

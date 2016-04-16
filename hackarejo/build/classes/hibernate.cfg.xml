@@ -28,7 +28,6 @@
 		<mapping class="sutil.vo.ProdutoVO" />
 		<mapping class="sutil.vo.VendaVO" />
 		<mapping class="sutil.vo.ItensVO" />
-		<mapping class="sutil.vo.ClienteVO" />
 		<mapping class="sutil.vo.CartaoVO" />
 
 	</session-factory>

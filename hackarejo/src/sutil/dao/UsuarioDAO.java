@@ -22,7 +22,7 @@ public class UsuarioDAO extends DAOGenerico<UsuarioVO> {
 
 		q.addEntity(UsuarioVO.class);
 
-		q.setString(0, usuario.getLogin());
+		q.setString(0, usuario.getEmail());
 		q.setString(1, usuario.getSenha());
 
 		ok = q.list();

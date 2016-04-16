@@ -1,5 +1,7 @@
 package sutil.vo;
 
+import java.util.Date;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,11 +21,23 @@ public class UsuarioVO {
 	@Column(name = "id")
 	private Integer id;
 
-	@Column(name = "login")
-	private String login;
+	@Column(name = "nome")
+	private String nome;
+
+	@Column(name = "sobrenome")
+	private String sobrenome;
+
+	@Column(name = "email")
+	private String email;
 
 	@Column(name = "senha")
 	private String senha;
+
+	@Column(name = "cpf")
+	private String cpf;
+
+	@Column(name = "dt_nascimento")
+	private Date nascimento;
 
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "estabelecimento")
@@ -41,12 +55,28 @@ public class UsuarioVO {
 		this.id = id;
 	}
 
-	public String getLogin() {
-		return login;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setLogin(String login) {
-		this.login = login;
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getSenha() {
@@ -55,6 +85,22 @@ public class UsuarioVO {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public Date getNascimento() {
+		return nascimento;
+	}
+
+	public void setNascimento(Date nascimento) {
+		this.nascimento = nascimento;
 	}
 
 	public EstabalecimentoVO getEstabelecimento() {

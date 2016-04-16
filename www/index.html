@@ -35,9 +35,12 @@
     	<input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuário" required autofocus>
     	<label for="senha" class="sr-only">Senha</label>
     	<input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
-            <div class="btn-group btn-group-lg group btn-block" role="group" aria-label="...">
-                <button class="btn btn-lg btn-warning" type="submit" value="Entrar" id="btnLogin">Acessar</button>
-                <button class="btn btn-lg btn-warning" type="submit" value="Entrar" id="btnCadastrar">Cadastro</button>
+        <button class="btn btn-lg btn-warning" type="submit" value="Entrar" id="btnLogin">Acessar</button>
+            <div class="row">
+                <div class="btn-group btn-group-lg" role="group" aria-label="...">    
+                    <button class="btn btn-lg btn-warning" type="submit" value="Entrar" id="btnCadastrar">Cadastro</button>
+                    <button class="btn btn-lg btn-info" type="submit" value="Entrar" id="btnCadastrarGoogle">Conta Google</button>
+                </div>
             </div>
     </form>
     {{teste}}

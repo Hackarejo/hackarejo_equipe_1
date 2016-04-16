@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--
+         <meta name="description" content="#" />
+         <meta name="keywords" content="#" />
+         <meta property="og:title" content="#"/>
+         <meta property="og:description" content="#"/>
+         <meta property="og:image" content="#"/>
+         <meta name="twitter:title" content="#">
+         <meta name="twitter:description" content="#">
+         <meta name="twitter:image" content="#">-->
+      <title>Login</title>
+      <link href="bootstrap/bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/signin.css" rel="stylesheet">
+      <link href="css/sticky-footer-navbar.css" rel="stylesheet">    
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <script type="text/javascript" src="js/angular.min.js"></script>
+      <script type="text/javascript" src="js/angular-route.min.js"></script>
+      <script type="text/javascript" src="js/mainController.js"></script>
+   </head>
+   <body ng-controller="AppController">
+      <form method="post" action="?go=logar" class="form-signin">
+         <img src="#" alt="Logo" class="center-block text-center" style="margin-bottom:15px;"/>
+         <label for="usuario" class="sr-only">Usuário</label>
+         <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuário" required autofocus>
+         <label for="senha" class="sr-only">Senha</label>
+         <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
+         <button class="btn btn-lg btn-warning btn-block" type="submit" value="Entrar" id="btnLogin">Acessar</button>
+         <button class="btn btn-lg btn-default btn-block" type="submit" value="Entrar" id="btnCadastrar">Cadastrar</button>
+      </form>
+      
+      <!-- Footer -->
+      <footer class="footer">
+         <div class="container">
+            <p class="text-muted"><small>© 2016 Equipe Sutil</small></p>
+         </div>
+      </footer>
+      <!-- /Footer --> 
+   </body>
+</html>

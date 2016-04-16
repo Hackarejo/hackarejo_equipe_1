@@ -30,3 +30,12 @@ body {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #f0ad4e;
 }
+.hack-space-col{
+	margin-top:-15px;
+}
+
+.alert-info {
+    color: #531F44;
+    background-color: #FBF4F8;
+    border-color: #531F44;
+}

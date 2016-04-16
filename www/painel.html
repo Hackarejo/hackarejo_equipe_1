@@ -39,23 +39,57 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                <ul class="nav navbar-nav">
-                  <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lista<span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
-                     </ul>
-                  </li>
+                  <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Configurações</a></li>
                </ul>
                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">Sair</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Sair</a></li>
                </ul>
             </div>
          </div>
       </nav>
       <!-- /Menu --> 
       <!-- Conteudo -->
-      <div class="container"> Conteúdo </div>
+      <div class="container">
+      		<h2 class="text-center">Bem vindo!</h2>
+            <p class="text-center">Pague comandas rápidamente sem enfrentar filas!</p>
+            
+            <!-- Lista -->
+            <div class="row">
+            	<div class="col-sm-12">
+                <h3>Restaurantes Próximos</h3>
+                <hr />
+                    <ul class="list-group">
+                        <a href="#" class="clickable">
+                            <li class="list-group-item">
+                                <p><strong>Lorem Ipsum</strong></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas lacus vitae nisi pretium finibus.</p>
+                            </li>
+                        </a>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- / Lista -->
+            
+			<!-- Paginação -->
+            <nav class="center-block text-center">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Anterior">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li>
+                  <a href="#" aria-label="Próximo">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /Paginação -->
+            
+      </div>
       <!-- /Conteudo --> 
       <!-- Footer -->
       <footer class="footer">

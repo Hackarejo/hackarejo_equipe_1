@@ -13,7 +13,7 @@
          <meta name="twitter:title" content="#">
          <meta name="twitter:description" content="#">
          <meta name="twitter:image" content="#">-->
-      <title>Início</title>
+      <title>Login</title>
       <link href="bootstrap/bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
       <link href="css/signin.css" rel="stylesheet">
@@ -29,7 +29,17 @@
       <script type="text/javascript" src="js/mainController.js"></script>
    </head>
    <body ng-controller="AppController">
-           
+      <form method="post" action="" class="form-signin">
+         <img src="#" alt="Logo" class="center-block text-center" style="margin-bottom:15px;"/>
+         <h3 align="center">Pague comandas rápidamente sem enfrentar filas!</h3>
+         <label for="usuario" class="sr-only">Usuário</label>
+         <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuário" required autofocus>
+         <label for="senha" class="sr-only">Senha</label>
+         <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
+         <button class="btn btn-lg btn-warning btn-block" type="submit" value="Entrar" id="btnLogin">Acessar</button>
+         <button class="btn btn-lg btn-default btn-block" type="submit" value="Entrar" id="btnCadastrar">Cadastrar</button>
+      </form>
+      
       <!-- Footer -->
       <footer class="footer">
          <div class="container">

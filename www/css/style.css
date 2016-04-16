@@ -15,11 +15,11 @@ body {
 	color: #FFF;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #636363;
+	color: #C8C8C8;
 	background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #636363;
+	color: #C8C8C8;
 	background-color: #EFEFEF;
 }
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -38,4 +38,27 @@ body {
     color: #531F44;
     background-color: #FBF4F8;
     border-color: #531F44;
+}
+
+.clickable{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #323232;
+	cursor:pointer;
+
+}
+
+a:hover, onclick, focus{
+	text-decoration: none;
+	color:#633675;
+}
+
+.pagination li a{
+	color:#633675;
+}
+
+.pagination li a:hover, onclick, active{
+	color:#633675;
 }

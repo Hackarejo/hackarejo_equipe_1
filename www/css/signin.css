@@ -1,5 +1,5 @@
 body {
-	background-color: #FFF;
+	background-color: #fbfbfb;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -41,7 +41,7 @@ body {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 }
-/*
+
 .btn-default {
 	color: #FFF;
 	background-color: #643a74;
@@ -67,4 +67,4 @@ body {
 	background-color: #6E457E;
 	border-color: #7F4F92;
 }
-*/
+

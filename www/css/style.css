@@ -1,5 +1,5 @@
 body {
-	background-color: #FFF;
+	background-color: #FBFBFB;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -8,11 +8,11 @@ body {
 	-o-background-size: cover;
 }
 .navbar {
-	background-color: #EFEFEF;
+	background-color: #643a74;
 	border: 0px;
 }
 .navbar-default .navbar-nav > li > a {
-	color: #636363;
+	color: #FFF;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: #636363;
@@ -27,3 +27,6 @@ body {
 	background-color: transparent;
 } 
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f0ad4e;
+}

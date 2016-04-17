@@ -47,6 +47,10 @@ body {
 
 }
 
+a{
+	color:#633675;
+}
+
 a:hover, onclick, focus{
 	text-decoration: none;
 	color:#633675;

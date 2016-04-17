@@ -62,3 +62,8 @@ a:hover, onclick, focus{
 .pagination li a:hover, onclick, active{
 	color:#633675;
 }
+
+a .list-group-item:hover, active, onclick{
+	color:#633675;
+	text-decoration:none;
+}

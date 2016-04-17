@@ -1,9 +1,11 @@
 package sutil.dao;
 
+import java.math.BigInteger;
 import java.util.List;
 
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import sutil.vo.UsuarioVO;
 import br.edu.unisep.hibernate.DAOGenerico;
@@ -34,5 +36,23 @@ public class UsuarioDAO extends DAOGenerico<UsuarioVO> {
 		} else {
 			return ok.get(0);
 		}
+	}
+
+	public long cadastrar(UsuarioVO usuario) {
+		Session session = HibernateSessionFactory.getSession();
+
+		Transaction trans = session.beginTransaction();
+		long result = 0L;
+		try {
+			session.save(usuario);
+
+			trans.commit();
+
+		} catch (Exception e) {
+			trans.rollback();
+		}
+		session.close();
+
+		return result;
 	}
 }

@@ -5,26 +5,29 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 
+import sutil.dao.UsuarioDAO;
 import sutil.vo.UsuarioVO;
-import br.edu.unisep.hibernate.DAOGenerico;
 
 @Path("/cadastroUsuario")
 public class CadastroUsuarioWS {
 
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
-	public void salvar(UsuarioVO usuario) {
+	public UsuarioVO salvar(UsuarioVO usuario) {
 
-		DAOGenerico<UsuarioVO> dao = new DAOGenerico<UsuarioVO>();
+		UsuarioDAO dao = new UsuarioDAO();
 
 		ConverteSenhaWS converteSenha = new ConverteSenhaWS();
+
+		long id = 0L;
 
 		if (usuario.getId() != null && usuario.getId() != 0) {
 			usuario.setSenha(converteSenha.converte(usuario.getSenha()));
 			dao.atualizar(usuario);
 		} else {
 			usuario.setSenha(converteSenha.converte(usuario.getSenha()));
-			dao.salvar(usuario);
+			id = dao.cadastrar(usuario);
 		}
+		return usuario;
 	}
 }

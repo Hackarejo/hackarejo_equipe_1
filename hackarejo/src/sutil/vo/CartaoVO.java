@@ -28,8 +28,11 @@ public class CartaoVO {
 	@Column(name = "validade")
 	private String validade;
 
+	@Column(name = "nome")
+	private String nome;
+
 	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "usuario")
+	@JoinColumn(name = "cliente")
 	private UsuarioVO usuario;
 
 	public Integer getId() {
@@ -70,6 +73,18 @@ public class CartaoVO {
 
 	public void setUsuario(UsuarioVO usuario) {
 		this.usuario = usuario;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public UsuarioVO getUsuario() {
+		return usuario;
 	}
 
 }

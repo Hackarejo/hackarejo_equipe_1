@@ -72,3 +72,7 @@ a .list-group-item:hover, active, onclick{
 .alert-margin{
 	margin-top:5px;
 }
+
+.navbar-brand{
+	margin-top:-4px;
+}

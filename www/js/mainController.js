@@ -21,7 +21,15 @@ app.config(function($routeProvider) {
 });
 
 app.controller('AppController', function($scope, $http, $location) {
-
+$(document).ready(function() {
+ 
+               // PEGANDO O NOME DO DOCUMENTO OU PÁGINA ATUAL
+               documento = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
+ 
+               if(documento=="login") {
+                   $scope.telaLogin = true;}
+                   
+        });
 });
 
 app.controller('LoginController', function($scope, $http, $location) {

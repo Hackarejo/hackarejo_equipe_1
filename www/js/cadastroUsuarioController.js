@@ -1,3 +1,3 @@
-app.controller('PainelController', function($scope, $http, $location) {
+app.controller('CadastroUsuarioController', function($scope, $http, $location) {
 
 });

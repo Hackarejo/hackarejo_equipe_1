@@ -3,7 +3,7 @@
    <img src="#" alt="Logo" class="center-block text-center" style="margin-bottom:15px;"/>
    <h3 align="center">Pague comandas rápidamente sem enfrentar filas!</h3>
    <label for="usuario" class="sr-only">Usuário</label>
-   <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuário" required autofocus>
+   <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuário" required autofocus ng-model="login.email">
    <label for="senha" class="sr-only">Senha</label>
    <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required required ng-model="login.senha">
    <button class="btn btn-lg btn-warning btn-block" type="submit" value="Entrar" id="btnLogin" ng-click="logar()">Acessar</button>

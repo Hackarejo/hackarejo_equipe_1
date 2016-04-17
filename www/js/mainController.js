@@ -22,7 +22,9 @@ app.config(function($routeProvider) {
     }).when("/altera-usuario", {
 		templateUrl : "altera-usuario.html" 
     }).when("/gerencial", {
-		templateUrl : "gerencial.html"     
+		templateUrl : "gerencial.html"  
+    }).when("/gerencial-comanda", {
+		templateUrl : "gerencial-comanda.html"      
 	}).otherwise({
 		redirectTo : "/login"
 	});

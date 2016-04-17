@@ -20,7 +20,9 @@ app.config(function($routeProvider) {
     }).when("/admin", {
 		templateUrl : "admin.html" 
     }).when("/altera-usuario", {
-		templateUrl : "altera-usuario.html"     
+		templateUrl : "altera-usuario.html" 
+    }).when("/gerencial", {
+		templateUrl : "gerencial.html"     
 	}).otherwise({
 		redirectTo : "/login"
 	});

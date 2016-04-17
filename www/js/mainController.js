@@ -15,6 +15,12 @@ app.config(function($routeProvider) {
 	}).when("/restaurante", {
 		templateUrl : "nome-restaurante.html",
 		controller : "RestauranteController"
+    }).when("/pagoSucesso", {
+		templateUrl : "efetuado-sucesso.html"
+    }).when("/admin", {
+		templateUrl : "admin.html" 
+    }).when("/altera-usuario", {
+		templateUrl : "altera-usuario.html"     
 	}).otherwise({
 		redirectTo : "/login"
 	});

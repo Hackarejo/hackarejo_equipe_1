@@ -13,7 +13,7 @@
          <meta name="twitter:description" content="#">
          <meta name="twitter:image" content="#">
       -->
-      <title>Painel</title>
+      <title>Comanda</title>
       <link href="bootstrap/bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
       <link href="css/sticky-footer-navbar.css" rel="stylesheet">
@@ -27,7 +27,7 @@
    <body>
       <!-- Menu -->
       <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="container">
+         <div class="container">  
             <div class="navbar-header">
                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> 
                <span class="sr-only">Toggle navigation</span>
@@ -38,6 +38,9 @@
                <a class="navbar-brand" href="#" style="color:#FFF;">Logo</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav">
+                  <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Configurações</a></li>
+               </ul>
                <ul class="nav navbar-nav navbar-right">
                   <li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Sair</a></li>
                </ul>
@@ -51,45 +54,37 @@
             	<div class="col-sm-12">
             		<a href="javascript:window.history.go(-1)"><span class="glyphicon glyphicon glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar</a>
             	</div>
-            </div>                 
-            <!-- Lista -->
-            <div class="row">
-            	<div class="col-sm-12">
-                <button class="btn btn-lg btn-warning center-block" type="submit" value="Abrir comanda" id="btnAbrirComanda">Abrir Comanda</button> 
-                <h3>Comandas</h3>
+            </div> 
+      		    <h3>Comanda de Erick Bruno Sutil</h3>
                 <hr />
-                	<!-- empresa -->
-                    <ul class="list-group" ng-repeat="item in listaEstabelecimentos">
-                        <a href="gerencial-comanda.html" class="clickable">
-                            <li class="list-group-item" ng-click="">
-                                <p><strong>Erick Bruno Sutil</strong></p>
-                                <p>Comanda parcial: R$ 0,00</p>
-                            </li>
-                        </a>                     
+                	<!-- Comanda -->
+                    <ul class="list-group">
+                        <!-- item -->
+						<li class="list-group-item">
+                        	<strong class="text-left">Item</strong>
+                            <span class="pull-right">R$ 0,00</span>
+                        </li>
+                        <!-- /item -->
+                        <!-- item -->
+						<li class="list-group-item">
+                        	<strong class="text-left">Item</strong>
+                            <span class="pull-right">R$ 0,00</span>
+                        </li>
+                        <!-- /item -->
+                        <!-- item -->
+						<li class="list-group-item">
+                        	<strong class="text-left">Item</strong>
+                            <span class="pull-right">R$ 0,00</span>
+                        </li>
+                        <!-- /item -->                
                     </ul>
-                    <!-- /empresa -->
-                </div>
-            </div>
-            <!-- / Lista -->
-            
-			<!-- Paginação -->
-            <nav class="center-block text-center">
-              <ul class="pagination">
-                <li>
-                  <a href="#" aria-label="Anterior">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li>
-                  <a href="#" aria-label="Próximo">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <!-- /Paginação -->
-            
+                    <!-- /Comanda -->             
+      				<button class="btn btn-md btn-warning pull-right" type="submit" value="fechaComanda" id="btnFechaComanda" style="margin-left:10px;">
+                    Fechar Comanda<br /><small class="text-center">Com PagSeguro</small></button>	
+                       
+      				<button class="btn btn-md btn-warning pull-right" type="submit" value="fechaComandaCaixa" id="btnFechaComandaCaixa">
+                    Fechar Comanda<br /><small class="text-center">Em dinheiro</small></button>   
+
       </div>
       <!-- /Conteudo --> 
       <!-- Footer -->
@@ -104,4 +99,3 @@
       <script src="js/ie10-viewport-bug-workaround.js"></script>
    </body>
 </html>
-

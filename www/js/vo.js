@@ -29,7 +29,14 @@ function UsuarioVO() {
 	this.email = null;
 	this.cpf = null;
 	this.nascimento = null;
-	this.estabelecimento = new EstabelecimentoVO();
-	this.papel = new PapelVO();
+	this.estabelecimento = null;
+	this.papel = null;
 }
 
+function CartaoVO() {
+	this.id = null;
+	this.numero = null;
+	this.codigo = null;
+	this.validade = null;
+	this.usuario = new UsuarioVO();
+}

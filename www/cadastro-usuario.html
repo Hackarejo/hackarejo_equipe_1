@@ -1,106 +1,73 @@
-﻿<!DOCTYPE html>
-<html lang="pt-br"><head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--
-         <meta name="description" content="#" />
-         <meta name="keywords" content="#" />
-         <meta property="og:title" content="#"/>
-         <meta property="og:description" content="#"/>
-         <meta property="og:image" content="#"/>
-         <meta name="twitter:title" content="#">
-         <meta name="twitter:description" content="#">
-         <meta name="twitter:image" content="#">
-      -->
-      <title>Cadastro de Usuário</title>
-      <link href="bootstrap/bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
-      <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-   </head>
-   <body>
-      
-      <!-- Conteudo -->
-      <div class="container">
-        	<div class="row">
-                <div class="col-sm-12">
-            		<a href="javascript:window.history.go(-1)"><span class="glyphicon glyphicon glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar</a>
-            	</div>      
-                      
-            	<div class="col-sm-12 hack-space-col">
-            		<h1>Cadastro</h1>
-            	</div>
-            </div>
-            
-            <div class="row">
-            	<div class="col-sm-12">
-                   	 <form>                       
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="col-sm-6">
-                                        <div class="form-group"><label for="nomeUsuario">Nome:</label>
-                                        <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" placeholder="Nome"></div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group"><label for="emailUsuario">E-mail:</label>
-                                        <input type="email" class="form-control" id="emailUsuario" name="emailUsuario" placeholder="E-mail"></div>
-                                    </div>	
-                                    <div class="col-sm-6">
-                                        <div class="form-group"><label for="senhaUsuario">Senha:</label>
-                                        <input type="text" class="form-control" id="senhaUsuario" name="senhaUsuario" placeholder="Nome"></div>
-                                    </div>
-                                </div>
-                             </div>
-                            <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="col-sm-6">                        
-                                            <div class="form-group"><label for="nascUsuario">Data de nascimento:</label>
-                                            <input type="date" class="form-control" id="nascUsuario" name="nascUsuario"></div>
-                                        </div>
-                                        <div class="col-sm-6">	
-                                            <div class="form-group"><label for="cpfUsuario">CPF:</label>
-                                            <input type="text" class="form-control" id="cpfUsuario" name="cpfUsuario" placeholder="000.000.000-00"></div>
-                                        </div>	
-                                    </div>
-                            </div>    
-                            <div class="row">
-                                    <div class="col-sm-12">
-                                    <p class="text-info text-center"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 
-                                    Você deve cadastrar ao menos 1 cartão neste momento.</p>
-                                        <div class="col-sm-4"> 
-                                            <div class="form-group"><label for="cartaoUsuario">Cartão:</label>
-                                            <input type="text" class="form-control" id="cartaoUsuario" name="cartaoUsuario" placeholder="000.000.000-00"></div>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <div class="form-group"><label for="valCartaoUsuario">Validade:</label>
-                                            <input type="text" class="form-control" id="valCartaoUsuario" name="valCartaoUsuario" placeholder="00/00"></div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group"><label for="nomeTitCartao">Nome titular do Cartão:</label>
-                                            <input type="text" class="form-control" id="nomeTitCartao" name="nomeTitCartao" placeholder="Nome Titular do Cartão"></div>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <div class="form-group"><label for="codCartao">Código de Segurança:</label>
-                                            <input type="text" class="form-control" id="codCartao" name="codCartao" placeholder="Cod"></div>
-                                        </div>
-                                    </div>
-                            </div>
-                     	<button class="btn btn-lg btn-warning center-block" type="submit" value="Cadastrar" id="btnLogin">Cadastrar</button>          
-                    </form>
-                </div>
-            </div>
-          <br />  
+﻿
+<!-- Conteudo -->
+<div class="container">
+    <div class="row">
+          <div class="col-sm-12">
+          <a href="javascript:window.history.go(-1)"><span class="glyphicon glyphicon glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar</a>
+        </div>      
+                
+        <div class="col-sm-12 hack-space-col">
+          <h1>Cadastro</h1>
+        </div>
       </div>
-      <!-- /Conteudo --> 
-    
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-      <script src="bootstrap/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script> 
-      <script src="js/ie10-viewport-bug-workaround.js"></script>
-   </body>
-</html>
+      
+      <div class="row">
+        <div class="col-sm-12">
+               <form>                       
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <div class="col-sm-6">
+                                  <div class="form-group"><label for="nomeUsuario">Nome:</label>
+                                  <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" placeholder="Nome" ng-model="usuario.nome" required></div>
+                              </div>
+                              <div class="col-sm-6">
+                                  <div class="form-group"><label for="emailUsuario">E-mail:</label>
+                                  <input type="email" class="form-control" id="emailUsuario" name="emailUsuario" placeholder="E-mail" ng-model="usuario.email" required></div>
+                              </div>  
+                              <div class="col-sm-6">
+                                  <div class="form-group"><label for="senhaUsuario">Senha:</label>
+                                  <input type="password" class="form-control" id="senhaUsuario" name="senhaUsuario" placeholder="Senha" ng-model="usuario.senha" required></div>
+                              </div>
+                          </div>
+                       </div>
+                      <div class="row">
+                              <div class="col-sm-12">
+                                  <div class="col-sm-6">                        
+                                      <div class="form-group"><label for="nascUsuario">Data de nascimento:</label>
+                                      <input type="date" class="form-control" id="nascUsuario" name="nascUsuario" ng-model="usuario.nascimento"></div>
+                                  </div>
+                                  <div class="col-sm-6">  
+                                      <div class="form-group"><label for="cpfUsuario">CPF:</label>
+                                      <input type="text" class="form-control" id="cpfUsuario" name="cpfUsuario" placeholder="000.000.000-00" ng-model="usuario.cpf"></div>
+                                  </div>  
+                              </div>
+                      </div>    
+                      <div class="row">
+                              <div class="col-sm-12">
+                              <p class="text-info text-center"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 
+                              Você deve cadastrar ao menos 1 cartão neste momento.</p>
+                                  <div class="col-sm-4"> 
+                                      <div class="form-group"><label for="cartaoUsuario">Cartão:</label>
+                                      <input type="text" class="form-control" id="cartaoUsuario" name="cartaoUsuario" placeholder="000.000.000-00" ng-model="cartao.numero"></div>
+                                  </div>
+                                  <div class="col-sm-2">
+                                      <div class="form-group"><label for="valCartaoUsuario">Validade:</label>
+                                      <input type="text" class="form-control" id="valCartaoUsuario" name="valCartaoUsuario" placeholder="00/00" ng-model="cartao.validade"></div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="form-group"><label for="nomeTitCartao">Nome titular do Cartão:</label>
+                                      <input type="text" class="form-control" id="nomeTitCartao" name="nomeTitCartao" placeholder="Nome Titular do Cartão" ng-model="cartao.nome"></div>
+                                  </div>
+                                  <div class="col-sm-2">
+                                      <div class="form-group"><label for="codCartao">Código de Segurança:</label>
+                                      <input type="text" class="form-control" id="codCartao" name="codCartao" placeholder="Cod" ng-model="cartao.codigo"></div>
+                                  </div>
+                              </div>
+                      </div>
+                <button class="btn btn-lg btn-warning center-block" type="submit" value="Cadastrar" id="btnLogin" ng-click="criarUsuario()">Cadastrar</button>          
+              </form>
+          </div>
+      </div>
+    <br />  
+</div>
+ 

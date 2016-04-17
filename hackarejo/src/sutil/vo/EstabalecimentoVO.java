@@ -35,6 +35,9 @@ public class EstabalecimentoVO {
 	@JoinColumn(name = "endereco")
 	private EnderecoVO endereco;
 
+	@Column(name = "descricao")
+	private String descricao;
+
 	public Integer getId() {
 		return id;
 	}
@@ -83,4 +86,11 @@ public class EstabalecimentoVO {
 		this.endereco = endereco;
 	}
 
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
 }

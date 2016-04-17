@@ -35,7 +35,8 @@ public class VendaVO {
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "usuario")
 	private UsuarioVO usuario;
-
+	
+	@Column(name = "status")
 	private Integer status;
 
 	public Integer getId() {

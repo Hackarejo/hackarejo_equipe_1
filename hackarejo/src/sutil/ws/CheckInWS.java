@@ -25,9 +25,8 @@ public class CheckInWS {
 
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
-	@Path("/atualizarVenda")
-	public void atualizarStatus(VendaVO venda, Integer status) {
-		venda.setStatus(status);
+	@Path("/atualizarStatus")
+	public void atualizarStatus(VendaVO venda) {
 		dao.atualizar(venda);
 	}
 }

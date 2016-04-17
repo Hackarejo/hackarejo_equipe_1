@@ -1,115 +1,54 @@
-﻿<!DOCTYPE html>
-<html lang="pt-br"><head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--
-         <meta name="description" content="#" />
-         <meta name="keywords" content="#" />
-         <meta property="og:title" content="#"/>
-         <meta property="og:description" content="#"/>
-         <meta property="og:image" content="#"/>
-         <meta name="twitter:title" content="#">
-         <meta name="twitter:description" content="#">
-         <meta name="twitter:image" content="#">
-      -->
-      <title>Nome Restaurante</title>
-      <link href="bootstrap/bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
-      <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-   </head>
-   <body>
-      <!-- Menu -->
-      <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="container">  
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> 
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span> 
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="#" style="color:#FFF;">Logo</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-               <ul class="nav navbar-nav">
-                  <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Configurações</a></li>
-               </ul>
-               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Sair</a></li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <!-- /Menu --> 
-      <!-- Conteudo -->
-      <div class="container">
-         	<div class="row">
-            	<div class="col-sm-12">
-            		<a href="javascript:window.history.go(-1)"><span class="glyphicon glyphicon glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar</a>
-            	</div>
-            </div> 
-      		<h2 class="text-center">Seja bem vindo ao Nome Restaurante!</h2>
-            <p class="text-center">Pague comandas rápidamente sem enfrentar filas!</p>
-            
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="alert alert-info" role="alert">               	
-                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                            <span class="sr-only">Nome da notificaçaõ:</span>Notificação...
-                            <div class="row">
-                            	<div class="col-md-12 alert-margin">
-                                    <button class="btn btn-sm btn-warning" type="submit" value="Aceito" id="btnConfirma">Confirma</button>
-                                    <button class="btn btn-sm btn-danger" type="submit" value="Recuso" id="btnRecuse">Recusa</button>                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>	
-                </div>
-                
-                <h3>Comanda</h3>
-                <hr />
-                	<!-- Comanda -->
-                    <ul class="list-group">
-                        <!-- item -->
-						<li class="list-group-item">
-                        	<strong class="text-left">Item</strong>
-                            <span class="pull-right">R$ 0,00</span>
-                        </li>
-                        <!-- /item -->
-                        <!-- item -->
-						<li class="list-group-item">
-                        	<strong class="text-left">Item</strong>
-                            <span class="pull-right">R$ 0,00</span>
-                        </li>
-                        <!-- /item -->
-                        <!-- item -->
-						<li class="list-group-item">
-                        	<strong class="text-left">Item</strong>
-                            <span class="pull-right">R$ 0,00</span>
-                        </li>
-                        <!-- /item -->                
-                    </ul>
-                    <!-- /Comanda -->             
-      <button class="btn btn-md btn-warning pull-right" type="submit" value="fechaComanda" id="btnFechaComanda">Fechar Comanda<br /><small class="text-center">Com PagSeguro</small></button>   
+﻿
+<!-- Conteudo -->
+<div class="container">
+   	<div class="row">
+      	<div class="col-sm-12">
+      		<a href="javascript:window.history.go(-1)"><span class="glyphicon glyphicon glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar</a>
+      	</div>
+      </div> 
+		<h2 class="text-center">Seja bem vindo ao {{restaurante.nome}}</h2>
+      <p class="text-center">Pague comandas rápidamente sem enfrentar filas!</p>
+      
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="alert alert-info" role="alert">               	
+                      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                      <span class="sr-only">Nome da notificaçaõ:</span>Notificação...
+                      <div class="row">
+                      	<div class="col-md-12 alert-margin">
+                              <button class="btn btn-sm btn-warning" type="submit" value="Aceito" id="btnConfirma">Confirma</button>
+                              <button class="btn btn-sm btn-danger" type="submit" value="Recuso" id="btnRecuse">Recusa</button>                    
+                          </div>
+                      </div>
+                  </div>
+              </div>	
+          </div>
+          
+          <h3>Comanda</h3>
+          <hr />
+          	<!-- Comanda -->
+              <ul class="list-group">
+                  <!-- item -->
+			<li class="list-group-item">
+                  	<strong class="text-left">Item</strong>
+                      <span class="pull-right">R$ 0,00</span>
+                  </li>
+                  <!-- /item -->
+                  <!-- item -->
+			<li class="list-group-item">
+                  	<strong class="text-left">Item</strong>
+                      <span class="pull-right">R$ 0,00</span>
+                  </li>
+                  <!-- /item -->
+                  <!-- item -->
+			<li class="list-group-item">
+                  	<strong class="text-left">Item</strong>
+                      <span class="pull-right">R$ 0,00</span>
+                  </li>
+                  <!-- /item -->                
+              </ul>
+              <!-- /Comanda -->             
+<button class="btn btn-md btn-warning pull-right" type="submit" value="fechaComanda" id="btnFechaComanda">Fechar Comanda<br /><small class="text-center">Com PagSeguro</small></button>   
 
-      </div>
-      <!-- /Conteudo --> 
-      <!-- Footer -->
-      <footer class="footer">
-         <div class="container">
-            <p class="text-muted"><small>© 2016 Equipe Sutil</small></p>
-         </div>
-      </footer>
-      <!-- /Footer --> 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-      <script src="bootstrap/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script> 
-      <script src="js/ie10-viewport-bug-workaround.js"></script>
-   </body>
-</html>
+</div>
+<!-- /Conteudo --> 

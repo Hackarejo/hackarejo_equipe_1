@@ -12,7 +12,8 @@
          <meta property="og:image" content="#"/>
          <meta name="twitter:title" content="#">
          <meta name="twitter:description" content="#">
-         <meta name="twitter:image" content="#">-->
+         <meta name="twitter:image" content="#">
+      -->
       <title>Início</title>
       <link href="bootstrap/bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
@@ -32,7 +33,20 @@
       <script type="text/javascript" src="js/cadastroUsuarioController.js"></script>
    </head>
    <body ng-controller="AppController">
-
+	  <!-- Menu -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#" style="color:#FFF;">Logo</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Sair</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- /Menu -->  		
       <div class="container" ng-view></div>
 
       <!-- Footer -->

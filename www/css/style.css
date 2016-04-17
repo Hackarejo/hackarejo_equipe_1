@@ -67,3 +67,11 @@ a .list-group-item:hover, active, onclick{
 	color:#633675;
 	text-decoration:none;
 }
+
+.alert-padding{
+	padding-top:5px;
+}
+
+.alert-margin{
+	margin-top:5px;
+}

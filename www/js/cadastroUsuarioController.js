@@ -1,4 +1,5 @@
 app.controller('CadastroUsuarioController', function($scope, $http, $location) {
+	 $scope.telaLogin = false;
 	$scope.usuario = new UsuarioVO();
 	$scope.cartao = new CartaoVO();
 	$scope.criarUsuario = function() {
